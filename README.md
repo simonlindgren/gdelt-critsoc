@@ -31,4 +31,6 @@ These are the general steps performed in `gdelt-databuilder.ipynb`, with more de
 
 3. See which GDELT coded themes are the most common in data matching our searchstrings, and broaden the search in the GKG based on these. In this example we got around 1.9M articles based on the URL searches, with 11.8M articles added through matching theme codes. Removing duplicates across the two sets of data, we ended up with 12.2M articles about our topic(s).
 
-4. 
+4. Based on the `eventIds` found in our current dataset, we connect to GDELT's [Event Database 1.0](https://www.gdeltproject.org/data.html#rawdatafiles) and join in the extended event data from there. This means that we are enriching the data we already have with more columns about the events identified through the GKG.
+
+5. A set of datawrangling steps with `koalas` leads up to an ordered and useful dataframe.
