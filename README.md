@@ -25,5 +25,5 @@ This notebook offers a method to drill down fast to applications of GDELT that I
 
 These are the steps performed in `gdelt-databuilder.ipynb`:
 
-1. ...
+1. We start from GDELT's [GKG 1.0](https://www.gdeltproject.org/data.html#rawdatafiles) and select a timeframe to analyse. This example uses `start_date = "2020-01-01 00:00:00"` and `end_date = "2020-12-31 00:00:00"`.
 2. ...
