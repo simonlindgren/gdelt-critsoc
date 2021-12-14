@@ -19,4 +19,11 @@ GDELT is a huge and growing database which starts from the notion of `events`. T
 
 GDELT, in other words, is a very ambitious project, and also highly complex. [All the codebooks and documentation](https://github.com/lamastex/spark-gdelt-examples/tree/master/gdelt-docs) are quite intimidating. Aside from the events and GKG data, the GDELT project also offers [other datasets](https://www.gdeltproject.org/data.html#rawdatafiles).
 
-This notebook offers a method to drill down fast to applications of GDELT that I feel may be interesting from the perspective of critical social science analyses that can be interesting in their own right, but maybe mainly as some form of 'mainstream'/'ground truth' baseline to contrast with analyses of processes and behaviours in social media.
+This notebook offers a method to drill down fast to applications of GDELT that I feel may be interesting from the perspective of critical social science analyses that can be useful in their own right, but maybe mainly as some form of 'mainstream'/'ground truth' baseline to contrast with analyses of processes and behaviours in social media.
+
+### Building the dataset
+
+These are the steps performed in `gdelt-databuilder.ipynb`:
+
+1. ...
+2. ...
