@@ -12,3 +12,11 @@ The method assumes that `gdelt_databuilder.ipynb` is run in a Databricks [5] env
 >5. [Databricks](https://github.com/databricks) – notebook environment for scala and python (and others) 
 
 ### Background
+
+GDELT is a huge and growing database which starts from the notion of `events`. These events are identified in news media globally, in over 100 languages, in print, broadcast, and web formats. The registered events are tagged with themes, people, organisations, emotions, etc., and all such elements are put together in GDELT's _Global Knowledge Graph_ (GKG), which is a real-time `graph` interlinking all of the event data. Some of the data go as far back as 1979.
+
+>"The GDELT Project is a realtime open data global graph over human society as seen through the eyes of the world's news media, reaching deeply into local events, reaction, discourse, and emotions of the most remote corners of the world in near-realtime and making all of this available as an open data firehose to enable research over human society" [gdeltproject.org](https://www.gdeltproject.org/)
+
+GDELT, in other words, is a very ambitious project, and also highly complex. [All the codebooks and documentation](https://github.com/lamastex/spark-gdelt-examples/tree/master/gdelt-docs) are quite intimidating. Aside from the events and GKG data, the GDELT project also offers [other datasets](https://www.gdeltproject.org/data.html#rawdatafiles).
+
+This notebook offers a method to drill down fast to applications of GDELT that I feel may be interesting from the perspective of critical social science analyses that can be interesting in their own right, but maybe mainly as some form of 'mainstream'/'ground truth' baseline to contrast with analyses of processes and behaviours in social media.
