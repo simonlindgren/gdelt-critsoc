@@ -10,4 +10,4 @@ The method assumes that `gdelt_databuilder.ipynb` is run in a Databricks [5] env
 3. [github.com/lamastex/spark-gdelt-examples](https://github.com/lamastex/spark-gdelt-examples) — data infrastructure and scala code
 4. [github.com/databricks/koalas](https://github.com/databricks/koalas) – it's genius! 🐨
 5. [Databricks](https://github.com/databricks) – notebook environment for scala and python (and others) 
---
+----
