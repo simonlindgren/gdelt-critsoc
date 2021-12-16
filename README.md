@@ -26,12 +26,12 @@ This notebook offers a method to drill down fast to applications of GDELT that I
 
 These are the general steps performed in `gdelt-databuilder.ipynb`, with more details described in the actual notebook:
 
-1. We start from GDELT's [GKG 1.0](https://www.gdeltproject.org/data.html#rawdatafiles) and select a timeframe to analyse. This example uses `start_date = "2020-01-01 00:00:00"` and `end_date = "2020-12-31 00:00:00"`.
+1. We start from GDELT's [GKG 1.0](https://www.gdeltproject.org/data.html#rawdatafiles) and select a timeframe to analyse. This example uses `start_date = "2021-01-01 00:00:00"` and `end_date = "2021-06-30 00:00:00"`.
 
 2. Choose a set of searchstrings to get data, based on searching the news article URLs, about the topic(s) we are interested in. This example uses `%covid%`, `%vaccine%` or `%vaxx%`.
 
-3. See which GDELT coded themes are the most common in data matching our searchstrings, and broaden the search in the GKG based on these. In this example we got around 1.9M articles based on the URL searches, with 11.8M articles added through matching theme codes. Removing duplicates across the two sets of data, we ended up with 12.2M articles about our topic(s).
+3. See which GDELT coded themes are the most common in the data matching our searchstrings, and broaden the search in the GKG based on these. In this example we got around 1.0M articles based on the URL searches, expanded to a total of 4.8M articles, after adding more articles based on the matching theme codes (and removing duplicates).
 
-4. Based on the `eventIds` found in our current dataset, we connect to GDELT's [Event Database 1.0](https://www.gdeltproject.org/data.html#rawdatafiles) and join in the extended event data from there. This means that we are enriching the data we already have with more columns about the events identified through the GKG. In this example, we ended up with a dataframe including **78.3M global events** related to `%covid%`, `%vaccine%` or `%vaxx%` between `2020-01-01` and `2020-12-31`.
+4. Based on the `eventIds` found in our current dataset, we connect to GDELT's [Event Database 1.0](https://www.gdeltproject.org/data.html#rawdatafiles) and join in the extended event data from there. This means that we are enriching the data we already have with more columns about the events identified through the GKG. In this example, we ended up with a dataframe including **19.2M global events** related to `%covid%`, `%vaccine%` or `%vaxx%` between `2021-01-01` and `2021-06-30`.
 
-5. A set of datawrangling steps with `koalas` leads up to an ordered and useful dataframe.
+5. A set of datawrangling steps, unpacking and/or dropping columns, leads to the creation of an ordered and useful dataset, saved to `.parquet`.
