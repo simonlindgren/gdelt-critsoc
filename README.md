@@ -20,7 +20,7 @@ GDELT, in other words, is a very ambitious project, and also highly complex. [Al
 
 This notebook offers a method to drill down fast to applications of GDELT that I feel may be interesting from the perspective of critical social science analyses that can be useful in their own right, but maybe mainly as some form of 'mainstream'/'ground truth' baseline to contrast with analyses of processes and behaviours in social media.
 
-### Building the dataset [`gdelt-databuilder.ipynb`]
+### Building the dataset
 
 These are the general steps performed in `gdelt-databuilder.ipynb`, with more details described in the actual notebook:
 
