@@ -1,16 +1,14 @@
 # GDELT Dataset Builder for Critical Social Science
 
-The main notebook in this repo (`gdelt-databuilder.ipynb`) uses scala/Spark to _load and filter_ [1] data from a _live updating delta lake GDELT_ [2] _storage infrastructure_ [3], and relies on Python `koalas` [4] for data wrangling. Also, some `pyspark`[5].
+The main notebook in this repo (`gdelt-databuilder.ipynb`) uses scala/Spark, supported by some Python, to _load and filter_ [1] data from a _live updating delta lake GDELT_ [2] _storage infrastructure_ [3].
 
-The method assumes that `gdelt_databuilder.ipynb` is run in a Databricks [6] environment where deltalake storage of GDELT [1; 3] is mounted.
+The method assumes that `gdelt_databuilder.ipynb` is run in a Databricks [4] environment where deltalake storage of GDELT [1; 3] is mounted.
 
 ##### Resources
 >1. [github.com/aamend/spark-gdelt](https://github.com/aamend/spark-gdelt) – package for easy loading of GDELT data in Spark environments
 >2. [GDELT](https://github.com/gdelt/gdelt.github.io) — database
 >3. [github.com/lamastex/spark-gdelt-examples](https://github.com/lamastex/spark-gdelt-examples) — data infrastructure and scala code
->4. [github.com/databricks/koalas](https://github.com/databricks/koalas) – it's genius! 🐨
->5. [PySpark](https://databricks.com/glossary/pyspark) – python API for Spark
->6. [Databricks](https://github.com/databricks) – notebook environment for scala and python (and others) 
+>4. [Databricks](https://github.com/databricks) – notebook environment for scala and python (and others) 
 
 ### Background
 
@@ -22,7 +20,7 @@ GDELT, in other words, is a very ambitious project, and also highly complex. [Al
 
 This notebook offers a method to drill down fast to applications of GDELT that I feel may be interesting from the perspective of critical social science analyses that can be useful in their own right, but maybe mainly as some form of 'mainstream'/'ground truth' baseline to contrast with analyses of processes and behaviours in social media.
 
-### Building the dataset
+### Building the dataset [`gdelt-databuilder.ipynb`]
 
 These are the general steps performed in `gdelt-databuilder.ipynb`, with more details described in the actual notebook:
 
