@@ -28,7 +28,7 @@ These are the general steps performed in `gdelt-databuilder.ipynb`, with more de
 
 2. Choose a set of searchstrings to get data, based on searching the news article URLs, about the topic(s) we are interested in. This example uses `%covid%`, `%vaccine%` or `%vaxx%`.
 
-3. See which GDELT coded themes are the most common in the data matching our searchstrings, and broaden the search in the GKG based on these. In this example we got around 1.0M articles based on the URL searches, expanded to a total of 4.8M articles, after adding more articles based on the matching theme codes (and removing duplicates).
+3. See which GDELT coded themes are the most common in the data matching our searchstrings, and broaden the search in the GKG based on these. Only choose the themes that are directly relevant, as searches in GDELT will easily become to broad. In this example we got around 1.0M articles based on the URL searches, expanded to a total of 4.8M articles, after adding more articles based on the matching theme codes (and removing duplicates).
 
 4. Based on the `eventIds` found in our current dataset, we connect to GDELT's [Event Database 1.0](https://www.gdeltproject.org/data.html#rawdatafiles) and join in the extended event data from there. This means that we are enriching the data we already have with more columns about the events identified through the GKG. In this example, we ended up with a dataframe including **19.2M global events** related to `%covid%`, `%vaccine%` or `%vaxx%` between `2021-01-01` and `2021-06-30`.
 
